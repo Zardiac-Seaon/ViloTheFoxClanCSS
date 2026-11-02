@@ -1,0 +1,451 @@
+/* FONTS - Import from Google Fonts */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Redaction:ital,wght@0,400;0,700;1,400&display=swap');
+ 
+body {font-family: Redaction, cursive;}
+ 
+.topbar {font-family: Redaction, cursive;}
+ 
+.navbar {font-family: Redaction, cursive;}
+ 
+@media screen and (min-width: 601px) { 
+body {
+background: url('https://i.postimg.cc/sDxLSHRP/1105000458611828058.jpg') center center fixed;
+background-size: 100%;
+color: #000000; } }
+
+@media screen and (max-width: 600px){
+body {
+background: #000000;
+background-size: cover;
+color: #FFFFFF; } }
+
+/* SCROLL BOXES */
+ 
+::-webkit-scrollbar {
+width: 7px;
+height: 7px; }
+::-webkit-scrollbar-track {
+background: #000000;}
+::-webkit-scrollbar-thumb {
+background: #000000; } 
+/* first number is thumb, second is track, firefox only */
+:root {
+scrollbar-color: #3E3D1E #A28E6B !important;
+scrollbar-width: auto;}
+ 
+/* HEADERS -
+H1 is the big header that says 'X's Den'
+H2 is not used anywhere in the default look unless you want to use it.
+H3 is used in the side bar (above the energy panel, achievement panel, etc. */
+ 
+h1 {
+color: #FFFFFF !important;
+font-size: 64px;
+text-align: center !important;}
+
+h2 {
+color: #FFFFFF !important;
+font-size: 24px;}
+
+h3 {
+color: #FFFFFF !important;
+font-size: 18px;}
+ 
+/* LINKS
+Color of links. This will affect all links on your page.
+Plan accordingly. */
+ 
+a:link,
+a:visited {
+color: #D10000 !important;
+background: none !important; }
+   
+a:hover {
+color: #FFFFFF !important; }
+ 
+/* MAIN PANEL - The panel in front of your background image. Usually a solid color on Lioden.
+You can make it a solid color by either using a HEX code, or by setting the final number in RGBA to 1.0 */
+   
+.container.main {
+background: rgba(0, 0, 0, 1);
+border: none;
+box-shadow: none;
+border-radius: 5px; }
+.col-md-9 {
+background: none; } 
+ 
+/* TOPBAR, NAVBAR, & BREADCRUMB 
+.topbar is the bar that shows your currency, your inbox, etc.
+.badge is the little icon that displays how many messages you have to read,
+and how many days a lioness has left until heat in caves
+.navbar is the bar that says "Den", "Crossroads", etc.
+.navbar li a:hover affects when you hover over a section of your navbar  */
+ 
+.topbar {
+background: #000000 !important;
+color: #FFFFFF !important;
+border: none !important;
+border-radius: 0px !important;  }
+
+.badge {
+background: #CC0000 !important;
+color: #F820000 !important; }
+ 
+.navbar {
+background: #000000 !important;
+color: #FFFFFF !important;
+border: none !important;
+border-radius: 0px !important; }
+
+.navbar li a:hover {
+background: #000000 !important;
+color: #FFFFFF !important; }
+
+/* This is mobile collapable navbar color changes.
+toggle is the button that opens the navbar
+leave .navbar-toggle background set to #HEX to have it inherit the color of the navbar
+navbar-collapse is just there to hide the white line 
+*/
+
+.navbar-toggle {
+border: none !important;
+background: #HEX !important; }
+
+.navbar-collapse {
+box-shadow: none !important;
+border-top: none !important; }
+
+ 
+/* Bookmark Bar - aka breadcrumb, this is where your link path is shown */
+
+.breadcrumb {
+background: #000000 !important;
+color: #FFFFFF !important;
+border: none !important;
+border-radius: 0px !important;} 
+.breadcrumb .active {
+color: #FFFFFF; }
+ 
+/* ALERTS 
+.alert is all alerts, only set this one if you want all alerts to be the same color
+.alert-success is the green one you see for hunting, patrolling, etc.
+.alert-danger is red alerts, like inbox
+.alert-warning is also some other red alerts, but I can't remember which ones. keep this
+and danger the same color for best results
+(quick notice maybe? more research)*/
+ 
+.alert {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+text-align: center !important;  }
+.alert-warning {
+background: #692C2C !important;
+color: #FFFFFF !important;}
+.alert-danger {
+background: #692C2C !important;
+color: #FFFFFF !important;}
+.alert-success {
+background: #31362F !important;
+color: #FFFFFF !important;}
+ 
+
+/*COMMENT BOX 
+This is a complicated one. please read carefully
+div#CommentBox is the color of the ENTIRE BOX, without comments in it. it is also the container
+.comment is the COMMENTS THEMSELVES
+If you want the flippy floppy colors, where one is a little darker than the other, DO NOT FILL IN ANYTHING FOR
+.comment ONLY FILL IN div#commentBox
+
+.input.bad is the icon to delete comments. you will be the only one to see this
+.input.bad a is the color of the x inside of it
+*/
+
+div#commentBox {
+background: #000000 !important;
+border: none !important;
+border-radius: 0px !important;
+color: #FFFFFF !important;}
+	
+.comment {     
+background: #HEX !important;
+border: none !important;
+border-bottom: none !important;
+border-radius: 0px !important;
+color: #HEX !important;
+text-align: center !important;}
+.text-muted { 
+color: #HEX !important; }
+
+input.bad {
+background: #HEX !important;
+color: #FFFFFF !important;}
+input.bad a {
+color: #FFFFFF !important; }
+
+table#player.table hr {
+display: none !important; }
+table#player.table div.xlarge { 
+margin-top: 10px !important; }
+
+ 
+/* SIDE PANELS 
+
+These are the panels that contain the actual information
+on the right side of your page, so where your exp, impression, etc. bars
+are contained, where your event currency is displayed, etc. */
+ 
+.panel {
+background: #171917 !important;
+color: #FFFFFF !important;
+border: none !important;
+border-radius: 0px !important;
+box-shadow: none !important;  }
+   
+/*IMPRESSION / ALL PROGRESS Bars
+Unless you color the progress bars below, all progress bars will default
+to the colors you put here.
+Bars will also inherit the border-radius value from this one, so it's
+not needed to specify border-radius for all bars. */
+.progress-bar {
+background: #HEX !important; 
+border-radius: 0px !important; }
+
+/* ENERGY */ .progress-bar-warning { 
+background: #693F00 !important;
+color: #HEX !important;}
+/* HUNGER */ .progress-bar-danger { 
+background: #690000 !important;
+color: #HEX !important;}
+/* EXP + ACHIEVEMENTS */ .progress-bar-success { 
+background: #0A4000 !important;
+color: #HEX !important;}
+
+/* This is the text that reads Energy: X% */
+.progress div {
+color: #FFFFFF !important; }
+
+.progress {
+background:  #000000;
+color: #HEX !important;
+border-radius: 0px !important;  }
+ 
+.s-chat-message:nth-child(even) {
+    background: #000000 !important;
+    border: none !important; }
+.s-chat-message:nth-child(odd) {
+background-color: #333333 !important; }
+.s-chat-message__pinned {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: none !important; }
+.s-chat-message_timestamp {
+    color: #FFFFFF !important; }
+
+	#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+		background-color: #CCCCCC !important;
+		border-left: 6px solid #HEX !important;
+		color: #000000 !important;
+		border-top-right-radius: 5px !important;
+		border-bottom-right-radius: 5px !important;
+	}
+.s-chat-message.s-chat-message_mention a, .s-chat-message.s-chat-message_mention a:visited {
+color: #FFFFFF !important; }
+   
+div#chatMessageContainer {
+    border: none !important; }
+button#label_currentChannel {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+border: none !important;
+border-radius: 5px !important; }
+
+div#lblCharacterCounter {
+color: #FFFFFF !important; }
+
+.s-chat-sidebar #fraChatChannelMenu,
+button.channelSwitcher, button.channelSwitcher.active {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+border: none !important;
+border-radius: 5px !important;
+box-shadow: none !important; }
+
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+		background: #FFFFFF;}
+html.nolayout {
+background: none !important; }
+
+div.emoteList.active {
+  background: #FFFFFF !important;
+  border: 1px solid #HEX !important;
+  box-shadow: none !important;
+}
+div.emoteList.active::before {
+background: #FFFFFF
+border-top: none !important;
+border: 1px solid #HEX !important; }
+ 
+.feature {
+background: #FFFFFF !important;
+color: #000000 !important;
+border: 3px double #HEX !important;
+border-radius: 0px !important;  }
+
+div.left {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important; }
+
+.xsmall {
+font-size: 14px !important; }
+ 
+.table {
+background: rgba(0, 0, 0, 0.0);
+border: none !important;
+border-collapse: separate;
+border-radius: 0px; }
+
+/* .top is where your king's name is displayed
+.bottom is where your number of mutations within your pride is displayed
+th is every other header on your den, like sparring table, reclaim left lions,
+edit details, etc. */
+
+.top, .bottom, th {
+background: #3E3E45 !important;
+color: #FFFFFF !important;
+border: none !important;
+border-radius: 0px !important; }
+ 
+.table .left {
+background: #3E3E45;
+border-radius: 0px !important; }
+
+.inner-table .left {
+background: #3E3E45 !important;
+border-radius: 0px !important;  }
+
+.inner-table .right {
+background: #3E3E45 !important;
+border-radius: 0px !important; 
+color: #FFFFFF !important; } 
+
+.right_odd {
+background: none !important; }
+   
+div#lion_image {
+opacity: 1.0;
+border-radius: 50%;
+overflow: hidden; }   
+table#player img {
+opacity: 1.0;
+border-radius: 50%; }
+   
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+display: none;}
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a::after {
+content: url('https://i.postimg.cc/BZKxvZ5r/dc8bsz3-0572534c-71c2-4fbd-915d-606e2ff9face.gif'); }
+ 
+input, textarea, select, button.button,
+a.btn.btn-default.button {
+background: #FFFFFF !important;
+border: none !important;
+border-radius: 0px !important;
+color: #000000 !important;
+text-shadow: none !important; }
+
+.boxcontainer {
+background: none;
+height: 75px;
+padding: 0px;
+display: block;
+justify-content: center;
+transition: 1s }
+.boxcontainer:static {
+height: 250px; }
+   
+.Box1 {
+float: left;
+background: #474B5C !important;
+color: #FFFFFF !important;
+border: none !important;
+border-radius: 0px !important;
+padding: 5px;
+float: left;
+height: 75px;
+width: 100%;
+overflow: hidden;
+margin-bottom: 10px;
+transition: 1s }   
+.Box1:static {
+overflow-y: auto;
+height: 250px; }
+   
+.Box2 {
+float: right;
+background: #474B5C !important;
+color: #FFFFFF !important;
+border: none !important;
+border-radius: 0px !important;
+padding: 5px;
+float: right;
+height: 75px;
+width: 30%;
+overflow: hidden;
+margin-bottom: 10px;
+transition: 1s }   
+.Box2:static {
+overflow-y: auto;
+height: 250px; }
+	
+.Box3 {
+float: right;
+background: #474B5C !important;
+color: #FFFFFF !important;
+border: none !important;
+border-radius: 0px !important;
+padding: 5px;
+float: right;
+height: 75px;
+width: 65%;
+overflow: hidden;
+margin-bottom: 10px;
+transition: 1s }   
+.Box3:hover {
+overflow-y: auto;
+height: 250px; }
+
+/* Black Cat - https://www.cursors-4u.com/cursor/hol26 */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/black-cat-4b44de25-32.webp') 32 32, auto !important;
+}
+/* End www.Cursors-4U.com Code */
+ 
+.breadcrumb::after {
+content: "CSS by ViloTheFox (#358920)";
+color: #HEX;
+position: absolute;
+right: 13%;
+z-index: 100; }
+		
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%;
+        }
+    }
